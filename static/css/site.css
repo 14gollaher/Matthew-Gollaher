@@ -21,6 +21,7 @@ body{
   margin-top: 80px;
   margin-bottom: 15px;
   background: #e8edef;
+  padding-bottom: 10px;
 }
 
 #photo-header{
@@ -200,8 +201,8 @@ a:active {color:#363636;}  /* selected link */
 .education .profession{
   font-size: 1.6em;
   font-weight: bold;
-
 }
+
 .education .description{
   font-size: 1.3em;
   line-height: 1.5em;
@@ -264,84 +265,37 @@ a:active {color:#363636;}  /* selected link */
   left: 7px;
 }
 
-/* Softwares */
-.softwares{
-  color: #fff;
-  margin-bottom: 5px;
-  padding: 5px 5px 5px 25px;
-  background: #8d9396;
-  position: relative;
-  font-size: 12px;
-  border-radius: 10px;   
-  white-space: nowrap;
+.divider {
+  border-color: #5d917a;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  padding-top: 50px;
 }
 
-@media screen and (min-width: 1200px) {
-  .softwares-full { 
-    display: block;
-  }
-  .softwares-medium { 
-    display: none;
-  }
-  .softwares-short {
-    display: none;
-  }
+/* My Work */
+.myWork {
+  background: #d0e5dc;
+  border-radius: 10px;  
+  padding: 10px 10px 0 10px;
+  text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
-  .softwares-full { 
-    display: none;
-  }
-  .softwares-medium { 
-    display: block;
-  }
-  .softwares-short {
-    display: none;
-  }
+.myWork .profession{
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
-@media screen and (max-width: 990px) {
-  .softwares-full { 
-    display: none;
-  }
-  .softwares-medium { 
-    display: none;
-  }
-  .softwares-short {
-    display: block;
-  }
+.myWork .description{
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
 
-@media screen and (max-width: 767px) {
-  .softwares-full { 
-    display: none;
-  }
-  .softwares-medium { 
-    display: block;
-  }
-  .softwares-short {
-    display: none;
-  }
-  @media screen and (max-width: 412px) {
-    .softwares-full { 
-      display: none;
-    }
-    .softwares-medium { 
-      display: none;
-    }
-    .softwares-short {
-      display: block;
-    }
-  }
+.myWork img {
+  border-radius: 20px;
 }
 
-/*490*/
-.softwares:before{
-  content: "\f013 ";
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  position: absolute;
-  top: 6px;
-  left: 7px;
+.myWorkDivider {
+  padding-top: 20px;
 }

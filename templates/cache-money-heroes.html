@@ -4,20 +4,33 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | CMH</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="/statics/file/TemplateData/UnityProgress.js"></script>  
-    <script src="/static/files/Build/UnityLoader.js"></script>
+    <link rel="shortcut icon" href="/static/unity/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="/static/unity/TemplateData/style.css">
+    <script src="/static/unity/TemplateData/UnityProgress.js"></script>  
+    <script src="/static/unity/Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/CacheMoneyHeroes.json", {onProgress: UnityProgress});
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/static/unity/Build/cmh.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
+
+    <p>
+      You may download the full game with the links below. You will need to extract BOTH files to a folder, and then
+      run the executable to boot up the game. Make sure the CacheMoneyHeroes_Data folders are combined correctly!
+    </p>
+    <div>
+      <a href="/static/files/CMH_1.zip">File 1</a>
+    </div>
+    <div>
+      <a href="/static/files/CMH_2.zip">File 2</a>
+    </div>
+
+    
     <div class="webgl-content">
       <div id="gameContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="fullscreen" id="fullScreenButton" onclick="gameInstance.SetFullscreen(1)"></div>
         <div class="title">CMH</div>
       </div>
     </div>
